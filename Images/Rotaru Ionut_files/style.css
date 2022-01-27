@@ -1,0 +1,940 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Montserrat:wght@300;400&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #20282a;
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+	background-color: RGB(229, 229, 229);
+}
+
+/* ---------home------------- */
+
+#home {
+	background-image: url("Images/aboutimg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.home img {
+	width: 100%;
+}
+.logoimg {
+	max-width: 750px;
+	margin-top: 80px;
+}
+
+.home {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.home .name {
+	font-size: 6vw;
+	color: #dfe0df;
+	margin-right: 10px;
+	background: rgba(2, 2, 2, 0.45);
+	border-radius: 11px;
+	padding: 5px 10px;
+}
+.home .job {
+	font-size: 6.5vw;
+	color: #e5e5e5;
+	background: rgba(2, 2, 2, 0.45);
+	border-radius: 11px;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+/* ------------home end------------------- */
+
+/* ---------nav --------------- */
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: rgba(32, 40, 42, 0.65);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+.container img {
+	animation: myAnim 2s linear 0s infinite normal both;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+nav .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	/* padding: 10px; */
+}
+nav .container ul li {
+	display: inline-block;
+	font-family: "Dongle", sans-serif;
+	font-size: 33px;
+	font-weight: 300;
+	padding: 10px 20px 10px 20px;
+}
+nav .container ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fc8f3a;
+}
+
+nav .container ul li.active a {
+	color: rgb(255, 255, 255);
+}
+nav .container ul li a:hover {
+	color: #ffe9d0;
+}
+
+/* -----------------nav end------------------- */
+
+/* -----------about ------------------ */
+
+.imgabout img {
+	width: 100%;
+	margin-left: 50px;
+}
+
+.about {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.description {
+	width: 60vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 160px;
+	margin-top: 170px;
+}
+.description p {
+	font-size: 20px;
+
+	font-family: "Montserrat", sans-serif;
+
+	text-indent: 10px;
+	margin-left: 100px;
+	line-height: 1.5;
+}
+.description .info {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+hr {
+	border-top: 1px solid #fc8f3a;
+	position: relative;
+	width: 60%;
+	bottom: 21px;
+	left: 100px;
+}
+
+.ClassName {
+	text-decoration: none;
+	font-family: Arial;
+	box-shadow: inset #ffffff 0px 5px 8px -2px, #d6d6d6 10px 5px 7px;
+
+	background: #2ef1ff;
+	background: -o-linear-gradient(90deg, #2ef1ff, #3b9ceb);
+	background: -moz-linear-gradient(center top, #2ef1ff 5%, #3b9ceb 100%);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.05, #2ef1ff),
+		color-stop(1, #3b9ceb)
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ef1ff', endColorstr='#3b9ceb');
+	background: -webkit-linear-gradient(#2ef1ff, #3b9ceb);
+	background: -ms-linear-gradient(#2ef1ff, #3b9ceb);
+	background: linear-gradient(#2ef1ff, #3b9ceb);
+	text-indent: -4px;
+	line-height: 33px;
+	-moz-border-radius: 25px 0 25px 25px;
+	-webkit-border-radius: 25px 0 25px 25px;
+	border-radius: 25px 0 25px 25px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+	width: 164px;
+	height: 32px;
+	padding: 13px;
+	text-shadow: #6daac2 0px 0px 2px;
+	border-color: #659dab;
+	border-width: 2px;
+	border-style: solid;
+	padding: 0;
+	position: relative;
+	left: 95px;
+	top: 20px;
+	height: 35px;
+}
+
+.ClassName:hover {
+	background: #3b9ceb;
+	background: -o-linear-gradient(90deg, #3b9ceb, #2ef1ff);
+	background: -moz-linear-gradient(center top, #3b9ceb 5%, #2ef1ff 100%);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.05, #3b9ceb),
+		color-stop(1, #2ef1ff)
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b9ceb', endColorstr='#2ef1ff');
+	background: -webkit-linear-gradient(#3b9ceb, #2ef1ff);
+	background: -ms-linear-gradient(#3b9ceb, #2ef1ff);
+	background: linear-gradient(#3b9ceb, #2ef1ff);
+}
+
+/* --------slider */
+
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	/* box-shadow: 0px 15px 10px -15px #111; */
+	z-index: 1;
+	top: 90px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	user-select: none;
+	font-size: 15px;
+	border-radius: 50%;
+	border: 2px solid white;
+	color: white;
+	width: 45px;
+	height: 45px;
+	padding: 12.5px;
+	margin-left: 48px;
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+}
+
+.prev:hover {
+	opacity: 1;
+}
+.next:hover {
+	opacity: 1;
+}
+
+.next .fas {
+	background: none;
+	border: none;
+}
+
+.prev .fas {
+	background: none;
+	border: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 48px;
+	opacity: 0.5;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.3;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.3;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.prev,
+	.next,
+	.text {
+		font-size: 11px;
+	}
+}
+
+.htmlimg img {
+	width: 100px;
+}
+.card ul {
+	list-style: none;
+}
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #fc8f3a;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.164);
+}
+
+.cards ul {
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+
+	right: 0px;
+	left: 80px;
+	line-height: 1.5;
+}
+.card ul li {
+	font-size: 30px;
+}
+.cards p {
+	padding: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+}
+
+/* ------end slider--------- */
+
+/* -------------work----------------- */
+
+.workcont {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	position: relative;
+	top: 80px;
+}
+.workcards {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	position: relative;
+}
+
+.novskill {
+	width: 457px;
+	height: 270px;
+	background-size: cover;
+	margin-top: 15px;
+	box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.41);
+	background-image: url("Images/cropnovember.png");
+}
+
+.novskill2 {
+	width: 457px;
+	height: 260px;
+	background-size: cover;
+	box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.41);
+	margin-top: 15px;
+	background-image: url("Images/cropnovember.png");
+}
+
+.img1 {
+	font-size: 30px;
+	color: #f8f80c;
+	text-align: center;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	animation: myAnimm 1s ease 0s 1 normal forwards;
+}
+span {
+	box-shadow: 5px 5px 30px 14px rgba(0, 0, 0, 0.49);
+	background-color: rgba(0, 0, 0, 0.144);
+	border-radius: 10px;
+	padding: 8px;
+}
+.box {
+	width: 440px;
+	height: 255px;
+	background-color: rgba(0, 0, 0, 0.267);
+	position: absolute;
+	top: 23px;
+	bottom: 0px;
+	left: 9px;
+	display: none;
+}
+.novskill:hover .box {
+	display: block;
+	animation: myAnime 1s ease 0s 1 normal forwards;
+}
+.novskill:hover .img1 {
+	display: none;
+}
+
+/* ------for hover .box----- */
+@keyframes myAnime {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* ----------end hover .box-------- */
+
+/* ------for img1 efect---------- */
+@keyframes myAnimm {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+/* ---------end img1 efect-------- */
+
+.asite {
+	position: absolute;
+	top: 140px;
+	right: 0;
+	left: 193px;
+	bottom: 0px;
+	display: none;
+}
+
+.novskill:hover .asite {
+	display: block;
+	font-size: 50px;
+	color: white;
+	animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim1 {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+/* -------------------------------------------------- */
+.img12 {
+	font-size: 30px;
+	color: #f5f544;
+
+	text-align: center;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	animation: myAnimma 1s ease 0s 1 normal forwards;
+}
+.box2 {
+	width: 440px;
+	height: 255px;
+	background-color: rgba(0, 0, 0, 0.267);
+	position: absolute;
+	top: 307px;
+	bottom: 0px;
+	left: 9px;
+	display: none;
+}
+.novskilla:hover .box2 {
+	display: block;
+	animation: myAnimea 1s ease 0s 1 normal forwards;
+}
+.novskilla:hover .img12 {
+	display: none;
+}
+
+/* ------for hover .box----- */
+@keyframes myAnimea {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* ----------end hover .box-------- */
+
+/* ------for img1 efect---------- */
+@keyframes myAnimma {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+/* ---------end img1 efect-------- */
+
+.asite2 {
+	position: absolute;
+	top: 421px;
+	right: 0;
+	left: 193px;
+	bottom: 0px;
+	display: none;
+}
+
+.novskilla:hover .asite2 {
+	display: block;
+	font-size: 50px;
+	color: white;
+	animation: myAnim1a 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim1a {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.novskilla {
+	width: 457px;
+	height: 270px;
+	background-size: cover;
+	margin-top: 15px;
+	box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.41);
+	background-image: url("Images/todo.jpg");
+}
+/* --------------------------------------------------------------------- */
+
+.img13 {
+	font-size: 30px;
+	color: #f5f544;
+
+	text-align: center;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	animation: myAnimm 1s ease 0s 1 normal forwards;
+}
+.box3 {
+	width: 440px;
+	height: 255px;
+	background-color: rgba(0, 0, 0, 0.267);
+	position: absolute;
+	top: 18px;
+	bottom: 0px;
+	left: 9px;
+	display: none;
+}
+.novskill2a:hover .box3 {
+	display: block;
+	animation: myAnime 1s ease 0s 1 normal forwards;
+}
+.novskill2a:hover .img13 {
+	display: none;
+}
+
+/* ------for hover .box----- */
+@keyframes myAnime {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* ----------end hover .box-------- */
+
+/* ------for img1 efect---------- */
+@keyframes myAnimm {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+/* ---------end img1 efect-------- */
+
+.asite3 {
+	position: absolute;
+	top: 140px;
+	right: 0;
+	left: 193px;
+	bottom: 0px;
+	display: none;
+}
+
+.novskill2a:hover .asite3 {
+	display: block;
+	font-size: 50px;
+	color: white;
+	animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim1 {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.novskill2a {
+	width: 457px;
+	height: 260px;
+	background-size: cover;
+	box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.41);
+	margin-top: 15px;
+	background-image: url("Images/dog.jpg");
+}
+/* --------------------------------------------------------------------- */
+.novskill2b {
+	width: 457px;
+	height: 260px;
+	background-size: cover;
+	box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.41);
+	margin-top: 15px;
+	background-image: url("Images/agenda.jpg");
+}
+.img14 {
+	font-size: 30px;
+	color: #f5f544;
+
+	text-align: center;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	animation: myAnimm 1s ease 0s 1 normal forwards;
+}
+.box4 {
+	width: 440px;
+	height: 255px;
+	background-color: rgba(0, 0, 0, 0.267);
+	position: absolute;
+	top: 293px;
+	bottom: 0px;
+	left: 9px;
+	display: none;
+}
+.novskill2b:hover .box4 {
+	display: block;
+	animation: myAnime 1s ease 0s 1 normal forwards;
+}
+.novskill2b:hover .img14 {
+	display: none;
+}
+
+/* ------for hover .box----- */
+@keyframes myAnime {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* ----------end hover .box-------- */
+
+/* ------for img1 efect---------- */
+@keyframes myAnimm {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+/* ---------end img1 efect-------- */
+
+.asite4 {
+	position: absolute;
+	top: 405px;
+	right: 0;
+	left: 193px;
+	bottom: 0px;
+	display: none;
+}
+
+.novskill2b:hover .asite4 {
+	display: block;
+	font-size: 50px;
+	color: white;
+	animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim1 {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* -------------------end work-------------------------- */
+
+/* ------------------footer------------------ */
+
+footer {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	flex-direction: column;
+	font-size: 18px;
+}
+
+footer img {
+	animation: myAnim 2s linear 0s infinite normal both;
+}
+
+/* ----------------------end footer---------------------------- */
+
+/* -------------------contact------------------------------ */
+
+.contactinfo {
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+	top: 90px;
+	left: 50px;
+	font-size: 30px;
+}
+
+.firstset {
+	max-width: 60%;
+	height: 400px;
+	background-image: url("Images/map.jpg");
+	background-size: cover;
+	margin: 0 auto;
+	margin-top: 120px;
+	border: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.secondset {
+	max-width: 40%;
+	height: 250px;
+	background-color: whitesmoke;
+	position: relative;
+	top: 80px;
+	left: 30px;
+	box-shadow: 5px 5px 21px 1px rgba(0, 0, 0, 0.34);
+}
+.secondset2 img {
+	height: 250px;
+}
