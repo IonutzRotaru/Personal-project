@@ -1641,3 +1641,8 @@ textarea:focus {
 		height: 120vh;
 	}
 }
+
+/* --------------media 375----------------------------------- */
+
+@media only screen and (max-width: 375px) {
+}
